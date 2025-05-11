@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+        <div class="converter">
+            <input type="number" id="amount" placeholder="Digite o valor" min="0" step="any" />
+            <select id="fromCurrency">
+                <option value="BRL">Real (BRL)</option>
+                <option value="USD">Dólar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Libra (GBP)</option>
+                <option value="JPY">Iene (JPY)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+                <option value="AUD">Dólar Australiano (AUD)</option>
+                <option value="CNY">Yuan Chinês (CNY)</option>
+            </select>
+            <select id="toCurrency">
+                <option value="USD">Dólar (USD)</option>
+                <option value="BRL">Real (BRL)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Libra (GBP)</option>
+                <option value="JPY">Iene (JPY)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+                <option value="AUD">Dólar Australiano (AUD)</option>
+                <option value="CNY">Yuan Chinês (CNY)</option>
+            </select>
+            <button id="convertBtn">Converter</button>
+        </div>
+        <div class="result" id="result"></div>
+        <div class="api-info">
+            <p>Taxas atualizadas em: <span id="updateTime">--/--/---- --:--</span></p>
+            <p>Fonte: <a href="https://www.exchangerate-api.com" target="_blank">ExchangeRate-API</a></p>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
